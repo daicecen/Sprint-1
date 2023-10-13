@@ -95,3 +95,23 @@ footer{
     position: sticky;
     bottom: 0;
 }
+ #img-aboutAs1, #img-aboutAs2, #img-aboutAs3 {
+    width: 25rem;
+    height: 20rem;
+    margin-top: 3rem;
+    margin-left: 20rem;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+ }
+ .aboutUs>p{
+    display: inline-block;
+    width: 25rem;
+    padding: 3rem;
+    margin-top: -400px;
+    margin-left: 60rem;
+    text-align: center;
+    font-size: 20px;
+    color: #451952;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
