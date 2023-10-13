@@ -39,13 +39,14 @@ main{
     background-color: #FFBDF7;
 }
 #banner {
-    margin-bottom: 6vh;
-    height: 30vh;
-    background-image: url("./images/imagebanner.jpg");
-    background-position: center;
-    background-size: cover;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-left: 6rem;
+    width: 90%;
+    height: 108vh;
+    object-fit: cover;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 h1, h2 {
     display: block;
