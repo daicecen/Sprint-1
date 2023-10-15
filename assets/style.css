@@ -18,6 +18,10 @@ margin-top: 0.5rem;
     margin-left: 95vw;
     margin-top: -5rem;
 }
+.logo:hover{
+    width: 2.5rem;
+    height: 2.5rem;
+}
 nav>a{
     margin: 1rem;
     margin-right: 20px;
@@ -35,6 +39,7 @@ nav a:hover{
     padding: 5px;
 }
 main{
+    text-align: center;
     min-height: 80%;
     background-color: #FFBDF7;
 }
@@ -96,21 +101,27 @@ footer{
     bottom: 0;
 }
  #img-aboutAs1, #img-aboutAs2, #img-aboutAs3 {
+    display: inline-block;
     width: 25rem;
     height: 20rem;
-    margin-top: 3rem;
-    margin-left: 20rem;
+    align-self: center;
+    margin: 2rem;
     object-fit: cover;
     border-radius: 30px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
  }
+ .aboutUs>img:hover {
+    width: 40rem;
+    height: 40rem;
+    padding: 1rem;
+    background-color: #FFECEC;
+ }
  .aboutUs>p{
     display: inline-block;
     width: 25rem;
-    padding: 3rem;
-    margin-top: -400px;
-    margin-left: 60rem;
-    text-align: center;
+    vertical-align: top;
+    margin-top: 7rem;
+    margin-left: 7rem;
     font-size: 20px;
     color: #451952;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
