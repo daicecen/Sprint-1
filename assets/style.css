@@ -44,11 +44,14 @@ main{
     background-color: #FFBDF7;
 }
 #banner {
-    width: 90%;
-    height: 108vh;
+    margin-bottom: 7vh;
+    width: 100%;
+    height: 35vh;
+    margin-top: 1rem;
+    background-image: url("/assets/images/imagebanner.jpg");
+    background-position: center;
+    background-size: cover;
     object-fit: cover;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     border-radius: 30px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
