@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    min-height: 10%;
+    min-height: 10vh;
     background-color: #FFECEC;
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@ header{
     position: sticky;
     top: 0;
 }
-.logo {
+header>img {
     width: 4rem;
     height: 4rem;
 }
@@ -33,7 +33,7 @@ nav>a{
     padding: 5px;
 }
 main{
-    min-height: 80%;
+    min-height: 88vh;
     background-color: #FFBDF7;
 }
 #banner {
@@ -84,7 +84,7 @@ h2{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 footer{
-    min-height: 10%;
+    height: 2vh;
     text-align: center;
     background-color: #E1AEFF;
     font-size: 12px;
@@ -173,20 +173,21 @@ tr,th,td {
     height: 4rem;
 }
 .tabla{
-    padding: 8.3rem;
+    padding: 6rem;
     border-radius: 30px;
 }
 #contenedor-listas{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 4rem;
+    justify-content: center;
+    padding: 1rem;
 }
 .contenedor-lista1{
+    width: 70%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     background-color: #E1AEFF;
     border-radius: 30px;
 }
@@ -199,6 +200,7 @@ h4{
 .contenedor-estrellas{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: #451952;
     font-size: 25px;
@@ -212,13 +214,15 @@ h4{
     object-fit: contain;
 }
 .contenedor-lista2{
+    width: 70%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     background-color: #E1AEFF;
     border-radius: 30px;
-    margin: 2rem;
+    margin: 1rem;
+   
 }
 .imagen-estrellas2{
     width: 25rem;
@@ -238,12 +242,13 @@ h4{
     color: #451952;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+section>h2{
+    font-size: 20px;
+}
 .container-hire{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 4.1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 fieldset{
     display: flex;
@@ -251,12 +256,14 @@ fieldset{
     max-width: 40vw;
     border: 1px solid black;
     padding: 1rem;
-    margin-top: 1rem;
     border-radius: 1rem;
     background-color: #FFECEC;
     color: #451952;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+iframe{
+    width: 600px;
 }
 .form{
     display: flex;
