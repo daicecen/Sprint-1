@@ -6,14 +6,12 @@
 header{
     min-height: 10%;
     background-color: #FFECEC;
-    position: sticky;
-    top: 0;
-}
-#contenedor-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 .logo {
     width: 4rem;
@@ -239,4 +237,34 @@ h4{
     font-size: 25px;
     color: #451952;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container-hire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4.1rem;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: #FFECEC;
+    color: #451952;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 50%;
+}
+input[type="submit"]{
+    align-self: flex-end;
+    width: 5rem;
 }
