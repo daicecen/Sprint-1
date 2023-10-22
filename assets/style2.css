@@ -71,6 +71,7 @@ h2{
     align-items: center;
 }
 #caja1 p{
+    padding: 1rem;
     font-size: 25px;
     color: #451952;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -99,7 +100,7 @@ footer{
     border-radius: 30px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
  }
- .aboutUs>img:hover {
+ .imagenAboutUs1>img:hover {
     width: 40rem;
     height: 40rem;
     padding: 1rem;
@@ -107,14 +108,21 @@ footer{
  }
  .aboutUs{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    margin-left: 10rem;
+    
  }
  .aboutUs p{
     font-size: 25px;
     color: #451952;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .imagenAboutUs1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
  }
  #imagen5{
     background-image: url("../assets/images/image5.jpg");
@@ -304,6 +312,7 @@ input[type="submit"]{
         width: 50vw;
     }
     .aboutUs{
+        margin-left: 0;
         flex-direction: column;
     }
     #img-aboutUs1, #img-aboutUs2, #img-aboutUs3{
@@ -380,6 +389,12 @@ input[type="submit"]{
         width: 80%;
         margin-left: 10%;
        }
+    .aboutUs{
+        margin-left: 0;
+    }
+    .aboutUs p{
+        font-size: 16px;
+    }
     .form{
         padding: 1rem;
        }
