@@ -7,13 +7,13 @@ header{
     min-height: 10vh;
     background-color: #FFECEC;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
 }
-header>img {
+.logo>img{
     width: 4rem;
     height: 4rem;
 }
@@ -117,15 +117,18 @@ footer{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
  #imagen5{
-    display: inline-flex;
-    width: 90%;
-    height: 108vh;
-    margin: 4.5rem;
+    background-image: url("../assets/images/image5.jpg");
+    margin-bottom: 7vh;
+    width: 50%;
+    height: 40vh;
     margin-top: 1rem;
+    margin-left: 25%;
+    background-position: center;
+    background-size: cover;
     object-fit: cover;
     border-radius: 30px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
- }
+}
  .parrafo-contacto{
     display: flex;
     flex-direction: row;
@@ -173,26 +176,28 @@ tr,th,td {
     height: 4rem;
 }
 .tabla{
-    padding: 6rem;
     border-radius: 30px;
 }
 #contenedor-listas{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 1rem;
+    width: 100vw;
+
 }
 .contenedor-lista1{
-    width: 70%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-self: center;
     background-color: #E1AEFF;
     border-radius: 30px;
 }
-.imagen6{
+.imagen6y7{
     object-fit: cover;
+    width: 50%;
 }
 h4{
     margin:0.5rem;
@@ -207,31 +212,19 @@ h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin:0.5rem;
 }
-.imagen-estrellas1{
+.imagenstar{
     width: 25rem;
     height: 5rem;
-    margin-right: 8rem;
     object-fit: contain;
 }
 .contenedor-lista2{
-    width: 70%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-self: center;
     background-color: #E1AEFF;
     border-radius: 30px;
-    margin: 1rem;
-   
-}
-.imagen-estrellas2{
-    width: 25rem;
-    height: 5rem;
-    margin-right: 8rem;
-    object-fit: contain;
-}
-.imagen7{
-    object-fit: cover;
+    margin-top: 1rem;
 }
 .parrafo-rating{
     display: flex;
@@ -248,12 +241,14 @@ section>h2{
 .container-hire{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 fieldset{
     display: flex;
     flex-direction: column;
-    max-width: 40vw;
+    
     border: 1px solid black;
     padding: 1rem;
     border-radius: 1rem;
@@ -268,10 +263,124 @@ iframe{
 .form{
     display: flex;
     flex-direction: column;
-    padding: 3rem;
     width: 50%;
+}
+.map{
+    display: flex;
+    flex-direction: column;
 }
 input[type="submit"]{
     align-self: flex-end;
     width: 5rem;
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav a{
+        font-size: 15px;
+        margin: 0.5rem;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    #banner{
+     width: 90%;
+     margin-left:5%;
+    }
+    #caja1{
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    #caja1 p{
+        font-size: 15px;
+    }
+    .imagen1{
+        height: 40vh;
+        width: 50vw;
+    }
+    .aboutUs{
+        flex-direction: column;
+    }
+    #img-aboutUs1, #img-aboutUs2, #img-aboutUs3{
+        height: 20vh;
+        width: 60vw;
+    }
+    .aboutUs p{
+        font-size: 15px;
+    }
+    #imagen5{
+        margin-left: 20%;
+        height: 40vh;
+        width: 60vw;
+    }
+    .parrafo-contacto{
+        font-size: 15px;
+    }
+    .contacto nav{
+        flex-direction: column;
+    }
+    table,tr,th,td{
+        font-size: 20px;
+    }
+    .contenedor-lista1, .contenedor-lista2{
+        flex-direction: column;
+        width: 80vw;
+    }
+    ol, ul {
+        list-style-position: inside;
+    }
+    ul{
+        list-style: none;
+    }
+    .contenedor-estrellas{
+        font-size: 15px;
+    }
+    .imagenstar{
+        width: 10rem;
+    }
+    h1, h2 {
+        font-size: 1rem;
+    }
+    .parrafo-rating{
+        font-size: 15px;
+    }
+    .container-hire{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width: 300px;
+    }
+    section>h2{
+        font-size: 15px;
+    }
+    fieldset{
+        font-size: 12px;
+    }
+    .form{
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    #banner{
+        width: 80%;
+        margin-left: 10%;
+       }
+    .form{
+        padding: 1rem;
+       }
 }
